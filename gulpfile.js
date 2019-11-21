@@ -15,7 +15,7 @@ const path = {
 	src: {
 		root: 		"app/",
 		fonts: 		"app/fonts/**/*",
-    samples: 	"app/samples/**/*.{jpg,svg,png,jpeg,JPG,PNG}",
+    samples: 	"app/img/**/*.{jpg,svg,png,jpeg,JPG,PNG}",
 		scss: 		"app/scss/**/*.{sass,scss}",
     js: 			"app/js/**/*.{js,json}",
     templates:  "app/templates/"
@@ -24,7 +24,7 @@ const path = {
     root: "dist",
 		css: "dist/css",
     js: "dist/js",
-    samples: "dist/samples",
+    samples: "dist/img",
     fonts: "dist/fonts",
     fontAwesome: "dist/fonts/font-awesome"
 	}
@@ -33,7 +33,7 @@ const bootstrap = path.root + "node_modules/bootstrap/dist/js/bootstrap.js";
 const popper = path.root + "node_modules/popper.js/dist/umd/popper.js";
 const jquery = path.root + "node_modules/jquery/dist/jquery.js";
 const fontAwesome = path.root + "node_modules/font-awesome/fonts/*";
-
+const carousel = path.root + "node_modules/owl.carousel/dist/owl.carousel.min.js";
 // reload browser starta o browser
 function html() {
   //compile and transform handlebars to html
@@ -76,7 +76,7 @@ function js() {
 }
 function vendorJs() {
   // copy js from vendors
-  return gulp.src([bootstrap, popper, jquery])
+  return gulp.src([bootstrap, popper, jquery, carousel])
     .pipe(gulp.dest(path.dist.js));
 }
 function fonts(callback) {
