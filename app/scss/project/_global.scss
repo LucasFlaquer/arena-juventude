@@ -7,7 +7,13 @@
 }
 
 body {
-	background-color: rgb(65, 62, 62);
+	background-color: #000;
+
+	.text-center {
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
 }
 
 .section {
@@ -17,3 +23,19 @@ body {
 		color: #fff;
 	}
 }
+.arena-title {
+	font-family: 'hanson';
+	text-align: center;
+	font-size: 10rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: -webkit-linear-gradient(90deg, #ec0086,   #eba926);
+	letter-spacing: 10px;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 5px transparent;
+	color: #000;
+	
+	
+}
+
+
