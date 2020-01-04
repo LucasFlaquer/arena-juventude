@@ -8,16 +8,24 @@
 	{{> org-header }}
 	<main id="main">
 		<div class="container">
-			<ul class="ministerios">
+			{{!-- <ul class="ministerios">
 				<li><img src="img/arena.png" alt=""></li>
 				<li><img src="img/arena.png" alt=""></li>
 				<li><img src="img/arena.png" alt=""></li>
-			</ul>
-			<p class="text-center">Bem-vindo</p>
+			</ul> --}}
+			{{!-- <p class="text-center">Bem-vindo</p> --}}
 			<h1 class="arena-title">arena</h1>
 			<p class="text-center">Juventude calvariana</p>
-			<p><a href="#">Clique aqui</a> para se inscrever no <strong>arenacamp</strong> 2020</p>
+			<p class="text-center link">
+				Estão abertas as inscrições para o <strong>arenacamp</strong> 2020
+				<span>* vagas limitadas *</span>
+			</p>
+			<div class="form embed-responsive embed-responsive-1by1">
+				<iframe class="embed" src="https://docs.google.com/forms/d/e/1FAIpQLSeA4skJBqpndS09VNlhoyZ8wNJLXkqCjl7kDwtkl6qH8JvCJA/viewform?embedded=true" height="2797" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+			</div>
+
 		</div>
+
 	</main>
 	{{> footer-scripts}}
 </body>

@@ -1,8 +1,12 @@
 //put your fonts here
 @font-face {
   font-family: 'hanson';
-  // font-style: normal;
-  // font-weight: 600;
   src: url("../fonts/Hanson-Bold.otf");
   src: url("../fonts/Hanson-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'montserrat black-italic';
+  src: url("../fonts/Montserrat-BlackItalic.ttf");
+  // src: url("../fonts/Hanson-Bold.ttf");
 }
